@@ -1,0 +1,13 @@
+/construction
+/public_html/hot
+/public_html/storage
+tequilarazones/node_modules
+tequilarazones/storage/*.key
+tequilarazones/vendor
+tequilarazones/.env
+tequilarazones/.phpunit.result.cache
+tequilarazones/Homestead.json
+tequilarazones/Homestead.yaml
+tequilarazones/npm-debug.log
+tequilarazones/yarn-error.log
+pwd.txt
