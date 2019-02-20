@@ -49,7 +49,7 @@
 			<div class="vertical-cols">
 				<div class="first">
 					<div class="container full">
-						<h2 class="right-line gray-line">Un téquila transparente para paladares<br><b>Exigentes.</b></h2>
+						<h2 class="right-line gray-line">Un téquila para paladares<br><b>Exigentes.</b></h2>
 						<div class="calltoaction right-align">
 							<h3>Tequila<br>Añejo</h3>
 							<a href="#_tequila_anejo" class="r_button bk_gray">Conócelo</a>
@@ -152,7 +152,7 @@
 				<div class="description">
 					<div class="box">
 						<p><b>Ocho meses</b> en barrica de roble francés convierten a este tequila en un acompañante excepcional de cualquier celebración.</p>
-						<p>Al probarlo no pasarán inadvertidos su aroma y sabor a roble, así como un brillante colo ámbar.</p>
+						<p>Al probarlo no pasarán inadvertidos su aroma y sabor a roble, así como un brillante color ámbar.</p>
 						<img src="{{ asset('img/Tequila_Razones_Legales.png') }}" alt="Legales">
 					</div>
 				</div>
@@ -247,7 +247,7 @@
 			<div class="row white inferior">
 				<div class="description">
 					<div class="box">
-						<p>La paciencia premia y nuestro <b>extra añejo</b> es un ejemplo perfecto: <b>48 meses</b> en barricas de roble blanco americano dan como resultado un excepcional tequila, enriquecido con el saborpropio de las maderas y ligeros toques de chocolate.</p>
+						<p>La paciencia premia y nuestro <b>extra añejo</b> es un ejemplo perfecto: <b>48 meses</b> en barricas de roble blanco americano dan como resultado un excepcional tequila, enriquecido con el sabor propio de las maderas y ligeros toques de cacao.</p>
 						<img src="{{ asset('img/Tequila_Razones_Legales.png') }}" alt="Legales">
 					</div>
 				</div>
@@ -258,7 +258,7 @@
 						<li>Tiempo de maduración: <b>48 meses</b></li>
 						<li>Barrica de maduración: <b>Roble Blanco Americano</b></li>
 						<li>Color: <b>Ámbar Oscuro</b></li>
-						<li>Sabor: <b>Roble y Chocolate</b></li>
+						<li>Sabor: <b>Roble y Cacao</b></li>
 					</ul>
 				</div>
 			</div>
@@ -272,13 +272,13 @@
 			<a href="#!" class="modal-close waves-effect waves-green btn-flat">&times;</a>
 			<div class="modal-content">
 				<h4 class="bk_turquoise"><img src="{{ asset('img/Tequila_Razones_icono_ExtraAnejo.png') }}" alt="Tequila Razones ExtraAnejo"></h4>
-				<p>La paciencia premia y nuestro <b>extra añejo</b> es un ejemplo perfecto: <b>48 meses</b> en barricas de roble blanco americano dan como resultado un excepcional tequila, enriquecido con el saborpropio de las maderas y ligeros toques de chocolate.</p>
+				<p>La paciencia premia y nuestro <b>extra añejo</b> es un ejemplo perfecto: <b>48 meses</b> en barricas de roble blanco americano dan como resultado un excepcional tequila, enriquecido con el saborpropio de las maderas y ligeros toques de cacao.</p>
 				<ul>
 					<li>100% Agave Azul</li>
 					<li>Tiempo de maduración: <b>48 meses</b></li>
 					<li>Barrica de maduración: <b>Roble Blanco Americano</b></li>
 					<li>Color: <b>Ámbar Oscuro</b></li>
-					<li>Sabor: <b>Roble y Chocolate</b></li>
+					<li>Sabor: <b>Roble y Cacao</b></li>
 				</ul>
 			</div>
 		</div>
@@ -338,7 +338,7 @@
 										<i class="fas fa-phone-square"></i>
 									</div>
 									<div class="caption">
-										<a href="tel:3334452301">(33) 34-45-2301</a>
+										<a href="tel:3320868058">(33) 2086 8058</a>
 									</div>
 								</li>
 

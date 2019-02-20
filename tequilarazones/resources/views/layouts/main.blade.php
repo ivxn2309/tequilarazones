@@ -72,7 +72,7 @@
 						<i class="fas fa-phone-square"></i>
 					</div>
 					<div class="caption">
-						<a href="tel:3334452301">(33) 34-45-2301</a>
+						<a href="tel:3320868058">(33) 2086 8058</a>
 					</div>
 				</li>
 			</ul>
