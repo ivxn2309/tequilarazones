@@ -366,6 +366,24 @@ p {
 		transform: rotate(180deg);
 	}
 }
+
+.scrolltop {
+	display: none;
+	display: inline-block;
+	position: fixed;
+	left: 1.3vw;
+	bottom: -100px;
+	@include smooth_transition(800ms);
+
+	&.visible {
+		display: inline-block;
+		bottom: 1.3vw;
+	}
+}
+
+.fp-controlArrow {
+	margin-top: 0;	
+}
 /* ================================================================== */
 /*  Header  */
 /* ================================================================== */
@@ -373,10 +391,12 @@ header {
 	left: 0;
 	padding: 55px 50px;
 	position: absolute;
+	position: fixed;
 	text-align: center;
 	top: 0;
 	width: 100%;
 	z-index: 100;
+	@include smooth_transition(300ms);
 
 	@media(max-width: 1080px) {
 		padding: 5vh 50px;
@@ -389,9 +409,13 @@ header {
 	.logo-container {
 		display: inline-block;
 		float: left;
+		position: relative;
+		top: 0;
+		@include smooth_transition(1000ms);
 
 		img {
 			width: 280px;
+			@include smooth_transition(200ms);
 
 			@media(max-width: 1080px) {
 				width: 25vw;
@@ -406,6 +430,37 @@ header {
 		a {
 			color: $primary;
 			font-size: 28px;
+			text-shadow: 0px 0px 1px #fff
+		}
+	}
+
+	&.scrolled {
+		height: 60px;
+
+		@media(max-width: 1080px) {
+			padding: 10px 50px;
+		}
+
+		@media(max-width: 768px) {
+			padding: 10px 8vw;
+		}
+
+		@media(max-width: 640px) {
+			padding: 10px 5vw;
+		}
+
+		.logo-container {
+			top: -100px;
+
+			img {
+				width: 120px;
+			}
+		}
+
+		.menu-container {
+			background-color: #fff;
+			border-radius: 3px;
+			padding: 5px 10px 0;
 		}
 	}
 }

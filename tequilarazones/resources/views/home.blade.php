@@ -396,9 +396,19 @@
 		var myFullpage = new fullpage('#app', {
 			anchors: anchors,
 			scrollingSpeed: 1700,
-			normalScrollElements: '.modal .modal-content, .sidenav-overlay, #slide-out, .scroll',
+			normalScrollElements: '.modal .modal-content, .sidenav-overlay, #slide-out, .scroll, .scrolltop, header',
+			responsiveWidth: 768,
 			fixedElements: '.scroll',
 			onLeave: function(origin, destination, direction){
+				if(destination.index > 0) {
+					$('.scrolltop').addClass('visible');
+					$('header').addClass('scrolled');
+				}
+				else {
+					$('.scrolltop').removeClass('visible');
+					$('header').removeClass('scrolled');
+				}
+
 				if(screen.width > 768 && destination.index == 6) {
 					$('.scroll').addClass('inverse');
 				}

@@ -79,17 +79,20 @@
 		</li>
 	</ul>
 
-	<div id="app">
-		<header>
-			<div class="boxed">
-				<div class="logo-container">
-					<img src="{{ asset('img/razones_logo.png') }}" alt="Tequila Razones">
-				</div>
-				<div class="menu-container">
-					<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-				</div>
+	<header>
+		<div class="boxed">
+			<div class="logo-container">
+				<img src="{{ asset('img/razones_logo.png') }}" alt="Tequila Razones">
 			</div>
-		</header>
+			<div class="menu-container">
+				<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+			</div>
+		</div>
+	</header>
+
+	<a href="#_home" class="scrolltop bk_primary btn-floating btn-large waves-effect waves-light"><i class="far fa-arrow-alt-circle-up"></i></a>
+
+	<div id="app">
 		<main>
 			@yield('content')
 
