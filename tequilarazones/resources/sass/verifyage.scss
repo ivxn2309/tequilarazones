@@ -1,0 +1,253 @@
+/* ================================================================== */
+/*  Colors  */
+/* ================================================================== */
+$primary: #2b6f90; /// turquoise
+$secondary: #94c11f; /// green
+
+$blue: #104f9e; /// blue
+$turquoise: #00829a; /// turquoise 2
+$gray: #7c7f81; /// gray
+$gold: #d9b062; /// gold
+$black: #000; /// black
+
+.primary { color: $primary; }
+.secondary { color: $secondary; }
+
+.bk_primary { background-color: $primary !important; }
+
+.bk_secondary { background-color: $secondary !important; }
+
+.bk_blue { background-color: $blue !important; }
+
+.bk_black { background-color: $black !important; }
+
+.bk_gray { background-color: $gray !important; }
+
+.bk_turquoise { background-color: $turquoise !important; }
+/* ================================================================== */
+/*  Mixins  */
+/* ================================================================== */
+@mixin smooth_transition($time: 1s, $mode: ease){
+	-webkit-transition: all $time $mode;
+	-moz-transition: all $time $mode;
+	-o-transition: all $time $mode;
+	transition: all $time $mode;
+}
+
+@mixin flex_centered() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* ================================================================== */
+/*  Variables  */
+/* ================================================================== */
+$frag_size: 885px;
+$boxed: 1440px;
+$large_boxed: 1600px;
+/* ================================================================== */
+/*  Fonts  */
+/* ================================================================== */
+@font-face {
+	font-family: "Maven";
+	font-weight: 200;
+	src: url("../fonts/Maven Pro Regular.otf");
+}
+
+@font-face {
+	font-family: "Maven";
+	font-weight: 400;
+	src: url("../fonts/Maven Pro Medium.otf");
+}
+
+@font-face {
+	font-family: "Maven";
+	font-weight: 600;
+	src: url("../fonts/Maven Pro Bold.otf");
+}
+
+@font-face {
+	font-family: "Maven";
+	font-weight: 800;
+	src: url("../fonts/Maven Pro Black.otf");
+}
+/* ================================================================== */
+/*  General  */
+/* ================================================================== */
+html, body {
+	font-size: 16px;
+
+	@media(max-width: 1280px) {
+		font-size: 15px;
+	}
+
+	@media(max-width: 992px) {
+		font-size: 14px;
+	}
+
+	@media(max-width: 768px) {
+		font-size: 13px;
+	}
+}
+
+body {
+	font-family: 'Maven';
+	font-weight: 100;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+main {
+	position: relative;
+}
+
+h2 {
+	font-size: 2.0rem;
+	margin: 0;
+	text-transform: uppercase;
+
+	@media(max-width: 992px) {
+		font-size: 1.9rem;
+	}
+
+	@media(max-width: 640px) {
+		font-size: 1.7rem;
+	}
+
+	@media(max-width: 480px) {
+		font-size: 1.5rem;
+	}
+}
+
+h3 {
+	font-size: 1.3rem;
+	margin: 0;
+	text-transform: uppercase;
+
+	@media(max-width: 480px) {
+		font-size: 1.2rem;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+section {
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.datepicker-controls .select-month input {
+    width: 90px;
+}
+
+.datepicker-date-display .date-text {
+    font-size: 2.0rem;
+    line-height: 1;
+    padding: 60% 0;
+
+	@media(max-width: 600px) {
+		padding: 5px 0;
+	}
+}
+/* ================================================================== */
+/*  Content  */
+/* ================================================================== */
+#age_check {
+	position: relative;
+
+	.logo {
+		max-width: 200px;
+		width: 90%;
+	}
+
+	.box {
+		display: inline-block;
+	}
+
+	input {
+		color: #fff;
+		text-align: center;
+	}
+
+	button.submit {
+		background-color: $primary;
+		border-radius: 30px;
+		color: #fff;
+		margin-top: 10px;
+		text-transform: uppercase;
+		width: 150px;
+	}
+
+	.datepicker-date-display {
+		background-color: $primary;
+	}
+
+	.datepicker-controls {
+		margin: 0;
+		width: 100% !important;
+		background-color: $primary;
+	}
+
+	.datepicker-table td.is-selected {
+		background-color: $primary;
+		color: #fff;
+	}
+
+	.datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
+		color: $primary;
+		padding: 0 1rem;
+	}
+
+	.datepicker-table abbr {
+		text-decoration: none;
+		color: $primary;
+	}
+}
+
+#age_form_container {
+	@include flex_centered();
+	background-color: #000;
+	height: 60%;
+	left: 0;
+	min-height: 360px;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+	form {
+		display: inline-block;
+		max-width: 100%;
+		padding: 30px 15px;
+		width: 360px;
+	}
+}
+
+#error-space {
+	color: #fff;
+
+	h3{
+		color: #faa;
+		font-weight: 900;
+	}
+
+	h4{
+		font-size: 1.8rem;
+		font-weight: 100;
+		margin: 0;
+	}
+}
+
+#image_footer {
+	background-size: cover;
+	background-position: center;
+	bottom: 0;
+	height: 40%;
+	left: 0;
+	max-height: calc(100vh - 360px);
+	position: absolute;
+	width: 100%;
+}

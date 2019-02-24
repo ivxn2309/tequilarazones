@@ -13,6 +13,7 @@
 
 Route::get('/', 'SiteController@home')->name('home');
 Route::get('/home', 'SiteController@home')->name('home');
+Route::post('/home', 'SiteController@home')->name('home');
 
 Route::post('/contact', 'MailController@sendContactForm')->name('contact_form_sender');
 Route::get('/thanks', 'SiteController@saveContact')->name('save_contact');

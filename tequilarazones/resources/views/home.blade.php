@@ -8,7 +8,7 @@
 			<div class="vertical-cols">
 				<div class="first width60" style="background-image: url('{{ asset('img/Tequila_Razones_Landscape_1.png') }}');">
 					<div class="container full">
-						<h2 class="right-line">Un téquila transparente y derecho<br><b>como debe ser.</b></h2>
+						<h2 class="right-line">Un tequila transparente y derecho<br><b>como debe ser.</b></h2>
 						<div class="calltoaction right-align">
 							<h3>Tequila<br>Blanco</h3>
 							<a href="#_tequila_blanco" class="r_button bk_blue">Conócelo</a>
@@ -34,7 +34,7 @@
 				</div>
 				<div class="second width60" style="background-image: url('{{ asset('img/Tequila_Razones_Landscape_1.png') }}');">
 					<div class="container full">
-						<h2>Un téquila cálido, balanceado<br><b>y bien reposado</b></h2>
+						<h2>Un tequila cálido, balanceado<br><b>y bien reposado</b></h2>
 						<div class="calltoaction">
 							<a href="#_tequila_reposado" class="r_button bk_blue">Conócelo</a>
 							<h3>Tequila<br>Reposado</h3>
@@ -49,7 +49,7 @@
 			<div class="vertical-cols">
 				<div class="first">
 					<div class="container full">
-						<h2 class="right-line gray-line">Un téquila para paladares<br><b>Exigentes.</b></h2>
+						<h2 class="right-line gray-line">Un tequila para paladares<br><b>Exigentes.</b></h2>
 						<div class="calltoaction right-align">
 							<h3>Tequila<br>Añejo</h3>
 							<a href="#_tequila_anejo" class="r_button bk_gray">Conócelo</a>
