@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<section id="home" class="section">
+	<section id="home" class="section fp-noscroll">
 
 		<div id="blanco" class="slide">
 			<div class="vertical-cols">
@@ -87,7 +87,7 @@
 
 	</section>
 
-	<section id="about" class="section center-align">
+	<section id="about" class="section center-align fp-noscroll">
 		<div class="half-background" style="background-image: url('{{ asset('img/Tequila_Razones_Barrels_2.png') }}');"></div>
 		<div class="content">
 			<div class="boxed">
@@ -98,7 +98,7 @@
 		<div class="agave white"><img src="{{ asset('img/TequilaRazones_Agave.png') }}" alt="Tequila Razones Agave"></div>
 	</section>
 
-	<section id="tequila_blanco" class="section tequila-section">
+	<section id="tequila_blanco" class="section tequila-section fp-noscroll">
 		<div class="content">
 			<div class="row superior">
 				<div class="name right">
@@ -141,7 +141,7 @@
 		</div>
 	</section>
 
-	<section id="tequila_reposado" class="section tequila-section">
+	<section id="tequila_reposado" class="section tequila-section fp-noscroll">
 		<div class="content">
 			<div class="row superior">
 				<div class="name">
@@ -190,7 +190,7 @@
 		</div>
 	</section>
 
-	<section id="tequila_anejo" class="section tequila-section">
+	<section id="tequila_anejo" class="section tequila-section fp-noscroll">
 		<div class="content">
 			<div class="row superior">
 				<div class="name right">
@@ -237,7 +237,7 @@
 		</div>
 	</section>
 
-	<section id="tequila_extra_anejo" class="section tequila-section">
+	<section id="tequila_extra_anejo" class="section tequila-section fp-noscroll">
 		<div class="content">
 			<div class="row superior">
 				<div class="name left">
@@ -285,10 +285,55 @@
 	</section>
 
 	<section id="stores" class="section" style="background-image: url('{{ asset('img/TequilaRazones_Landscape_3.jpg') }}');">
-		¿Dónde Comprar?
+		<div class="boxed">
+			@if($stores)
+				<div class="stores-container center-align">
+					@php
+						$i = 0;
+					@endphp
+
+					@foreach ($stores as $store)
+						<div class="store">
+							<h4>{{ $store->name }}</h4>
+							<p>{{ $store->address }}</p>
+							<button {{ $i == 0 ? 'disabled=disabled' : '' }} class="r_button" map="#iframe-map-{{ $store->id }}">Ver</button>
+						</div>
+
+						@php
+							$i = $i + 1;
+						@endphp
+
+					@endforeach
+				</div>
+
+				<div id="map-container" class="map-container">
+					@foreach ($stores as $store)
+						<div id="iframe-map-{{ $store->id }}" class="iframe-map-container">
+							{!! $store->gmaps !!}
+						</div>
+					@endforeach
+				</div>
+
+				<script type="text/javascript">
+					jQuery('#iframe-map-' + {{ $stores[0]->id }}).slideDown();
+
+					jQuery('.store button').on('click', function() {
+						jQuery('.store button').removeAttr('disabled');
+						jQuery('.iframe-map-container').slideUp();
+						var selector = jQuery(this).attr('map');
+						jQuery(selector).slideDown();
+						jQuery(this).attr('disabled', 'disabled');
+					});
+				</script>
+			@else
+				<div class="info">
+					<h4>No hay tiendas disponibles</h4>
+				</div>
+			@endif
+		</div>
 	</section>
 
-	<section id="contact" class="section">
+	<section id="contact" class="section fp-noscroll">
 		<div class="row main-row">
 			<div class="form-contact-container">
 				<h2>Estamos aquí para ti,<br><b>Nos encantaría saber tu opinión</b></h2>
@@ -399,8 +444,9 @@
 		var myFullpage = new fullpage('#app', {
 			anchors: anchors,
 			scrollingSpeed: 1700,
-			normalScrollElements: '.modal .modal-content, .sidenav-overlay, #slide-out, .scroll, .scrolltop, header',
+			normalScrollElements: '.modal .modal-content, .sidenav-overlay, #slide-out, .scroll, .scrolltop, header, .stores-container',
 			responsiveWidth: 768,
+			scrollOverflow: true,
 			fixedElements: '.scroll',
 			onLeave: function(origin, destination, direction){
 				if(destination.index > 0) {

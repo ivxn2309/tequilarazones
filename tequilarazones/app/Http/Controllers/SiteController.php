@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use DateTime;
+use App\Store;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Symfony\Component\HttpFoundation\Cookie;
@@ -13,6 +14,8 @@ class SiteController extends Controller
 	{
 		setlocale(LC_ALL,"es_ES");
 		date_default_timezone_set('America/Mexico_City');
+
+		$stores = Store::all();
 
 		if( $request && isset( $request->dob )) {
 			$dob_str = $request->dob;
@@ -36,7 +39,7 @@ class SiteController extends Controller
 		}
 
 		if( session()->has('agexxx') && session('agexxx') === 'valid' ) {
-			return view('home');
+			return view('home')->with(['stores' => $stores]);
 		}
 		else if( session()->has('agexxx') ) {
 			return view('age')->with([ 'error' => true ]);

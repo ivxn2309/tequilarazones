@@ -129,6 +129,7 @@
 
 	<script src="{{ asset('lib/jquery/jquery-3.3.1.min.js') }}" type="text/javascript"></script>
 	<script src="{{ asset('lib/materialize/js/materialize.min.js') }}" type="text/javascript"></script>
+	<script src="{{ asset('lib/fullpage/vendors/scrolloverflow.min.js') }}" type="text/javascript"></script>
 	<script src="{{ asset('lib/fullpage/dist/fullpage.min.js') }}" type="text/javascript"></script>
 	<script src="{{ asset('js/init.js') }}"></script>
 	<script src="{{ asset('js/main.js?v=1.0.2') }}" type="text/javascript"></script>
