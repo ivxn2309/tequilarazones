@@ -382,7 +382,7 @@ p {
 }
 
 .fp-controlArrow {
-	margin-top: 0;	
+	margin-top: 0;
 }
 /* ================================================================== */
 /*  Header  */
@@ -500,24 +500,65 @@ footer {
 		li {
 			display: inline-block;
 			padding: 5px 20px;
+
+			@media(max-width: 992px){
+				padding: 5px 10px;
+			}
 		}
 	}
 
 	.info {
 		float: left;
 		font-size: 0.8rem;
-		width: calc(100% - 200px);
+		margin-left: 50px;
+		width: 650px;
+
+		@media(max-width: 992px){
+			width: 490px;
+		}
 
 		li {
 			border-right: 1px solid #fff;
 		}
 	}
 
+	.tresmujeres {
+		float: left;
+		text-align: center;
+		width: calc(100% - (650px + 95px));
+
+		@media(max-width: 1011px){
+			width: calc(100% - (650px + 50px));
+		}
+
+		@media(max-width: 992px){
+			width: calc(100% - (570px + 50px));
+		}
+
+		a {
+			display: inline-block;
+			width: 100%;
+		}
+
+		img {
+			max-height: 70px;
+		}
+	}
+
 	.social {
 		float: left;
 		font-size: 28px;
+		margin-right: 25px;
 		text-align: right;
-		width: 200px;
+		width: 95px;
+
+		@media(max-width: 1011px){
+			width: 50px;
+		}
+
+		ul {
+			margin: 0;
+		}
 
 		li {
 			padding: 5px 7px;
@@ -1294,6 +1335,15 @@ footer {
 
 		li {
 			padding: 5px 7px;
+		}
+	}
+
+	.tresmujeres {
+		display: inline-block;
+		width: 100%;
+
+		img {
+			width: 170px;
 		}
 	}
 }

@@ -108,6 +108,11 @@
 							<li><a href="#_contact">Contacto</a></li>
 						</ul>
 					</div>
+					<div class="tresmujeres">
+						<a target="_blank" href="http://www.tequilatresmujeres.com.mx/">
+							<img src="{{ asset('img/tres_mujeres.png') }}" alt="Tequila Tres Mujeres">
+						</a>
+					</div>
 					<div class="social">
 						<ul>
 							<li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>

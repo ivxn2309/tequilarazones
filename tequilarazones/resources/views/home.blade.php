@@ -284,11 +284,9 @@
 		</div>
 	</section>
 
-	{{--
 	<section id="stores" class="section" style="background-image: url('{{ asset('img/TequilaRazones_Landscape_3.jpg') }}');">
 		¿Dónde Comprar?
 	</section>
-	--}}
 
 	<section id="contact" class="section">
 		<div class="row main-row">
@@ -383,6 +381,11 @@
 					<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
 				</ul>
 			</div>
+			<div class="tresmujeres">
+				<a target="_blank" href="http://www.tequilatresmujeres.com.mx/">
+					<img src="{{ asset('img/tres_mujeres.png') }}" alt="Tequila Tres Mujeres">
+				</a>
+			</div>
 		</div>
 	</section>
 
@@ -391,7 +394,7 @@
 @section('scripts')
 
 	<script type="text/javascript">
-		var anchors = ['_home', '_about', '_tequila_blanco', '_tequila_reposado', '_tequila_anejo', '_tequila_extra_anejo', '_contact', '_mfooter'];
+		var anchors = ['_home', '_about', '_tequila_blanco', '_tequila_reposado', '_tequila_anejo', '_tequila_extra_anejo', '_stores', '_contact', '_mfooter'];
 
 		var myFullpage = new fullpage('#app', {
 			anchors: anchors,
