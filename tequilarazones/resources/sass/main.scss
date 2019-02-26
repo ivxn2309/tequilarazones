@@ -355,7 +355,7 @@ p {
 .scroll {
 	position: fixed;
 	right: 1.3vw;
-	bottom: 1.3vw;
+	bottom: 0;
 	filter: drop-shadow(1px 1px 1px #fff);
 	//width: 20px;
 	width: 2vh;
@@ -1549,4 +1549,29 @@ footer {
     width: 0;
     border-width: 10.5px 15px 10.5px 0;
     border-color: transparent #fff transparent transparent;
+}
+
+.fp-down {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+	position: absolute;
+	z-index: 4;
+	top: 50%;
+	cursor: pointer;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	margin-top: -38px;
+	-webkit-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+
+    -webkit-filter: drop-shadow(0 0 2px #000);
+    filter: drop-shadow(0 0 2px #000);
+    right: 10px;
+    border-width: 10.5px 0 10.5px 15px;
+	border-width: 15px 10.5px 0 10.5px;
+    border-color: #fff transparent transparent transparent;
 }

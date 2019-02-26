@@ -122,7 +122,8 @@
 				</div>
 			</footer>
 			@if(!Route::is('thanks'))
-				<img class="scroll" src="{{ asset('img/scroll.png') }}" alt="scrolldown">
+				<a class="scroll"><div class=" fp-down"></div></a>
+				<!--<img class="scroll" src="{{ asset('img/scroll.png') }}" alt="scrolldown">-->
 			@endif
 		</main>
 	</div>

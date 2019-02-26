@@ -11,8 +11,14 @@
 				</div>
 				<form action="{{ route('home') }}" method="post">
 					@csrf
-					<input type="text" name="dob" class="datepicker" placeholder="Ingresa tu fecha de nacimiento">
-					<button class="btn waves-effect waves-light submit" type="submit" name="action">Entrar</button>
+					<input type="hidden" name="dob" class="datepicker" placeholder="Ingresa tu fecha de nacimiento" value="Ene 1, 2000">
+
+					<div style="color: #fff;">
+						<h5>Para acceder al siguiente contenido debes haber cumplido la mayoría de edad.</h5>
+						<p>Al dar clic en <b>Continuar</b> aceptas que tienes 18+.</p>
+					</div>
+
+					<button class="btn waves-effect waves-light submit" type="submit" name="action">Continuar</button>
 				</form>
 
 				@if( isset($error) && $error )

@@ -6,7 +6,7 @@
 
 		<div id="blanco" class="slide">
 			<div class="vertical-cols">
-				<div class="first width60" style="background-image: url('{{ asset('img/Tequila_Razones_Landscape_1.png') }}');">
+				<div class="first width60" style="background-image: url('{{ asset('img/Tequila_Razones_Landscape_2.png') }}');">
 					<div class="container full">
 						<h2 class="right-line">Un tequila transparente y derecho<br><b>como debe ser.</b></h2>
 						<div class="calltoaction right-align">
@@ -458,10 +458,10 @@
 					$('header').removeClass('scrolled');
 				}
 
-				if(screen.width > 768 && destination.index == 6) {
+				if(screen.width > 768 && destination.index == 7) {
 					$('.scroll').addClass('inverse');
 				}
-				else if (destination.index == 7){
+				else if (destination.index == 8){
 					$('.scroll').addClass('inverse');
 				}
 				else {
@@ -475,6 +475,10 @@
 		});
 
 		jQuery(document).ready(function( $ ) {
+			$('.scroll').on('click', function() {
+				myFullpage.moveSectionDown();
+			});
+
 			$('form#contact-form').on('submit', function() {
 				console.log('Submit');
 				var name = $("input#name").val();
