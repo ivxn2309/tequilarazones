@@ -224,7 +224,7 @@
 		<div id="tequila_anejo_details" class="modal">
 			<a href="#!" class="modal-close waves-effect waves-green btn-flat">&times;</a>
 			<div class="modal-content">
-				<h4 class="bk_turquoise"><img src="{{ asset('img/Tequila_Razones_icono_Anejo.png') }}" alt="Tequila Razones Anejo"></h4>
+				<h4 class="bk_gray"><img src="{{ asset('img/Tequila_Razones_icono_Anejo.png') }}" alt="Tequila Razones Anejo"></h4>
 				<p>Nuestro <b>añejo</b> tiene el brillo del oro y la elegancia de una buena madera. Añejado durante <b>18 meses</b> en barricas de roble blanco francés, le otorga aromas y sabores intensos y equilibrados.</p>
 				<ul>
 					<li>100% Agave Azul</li>
@@ -271,8 +271,8 @@
 		<div id="tequila_extra_anejo_details" class="modal">
 			<a href="#!" class="modal-close waves-effect waves-green btn-flat">&times;</a>
 			<div class="modal-content">
-				<h4 class="bk_turquoise"><img src="{{ asset('img/Tequila_Razones_icono_ExtraAnejo.png') }}" alt="Tequila Razones ExtraAnejo"></h4>
-				<p>La paciencia premia y nuestro <b>extra añejo</b> es un ejemplo perfecto: <b>48 meses</b> en barricas de roble blanco americano dan como resultado un excepcional tequila, enriquecido con el saborpropio de las maderas y ligeros toques de cacao.</p>
+				<h4 class="bk_dark"><img src="{{ asset('img/Tequila_Razones_icono_ExtraAnejo.png') }}" alt="Tequila Razones ExtraAnejo"></h4>
+				<p>La paciencia premia y nuestro <b>extra añejo</b> es un ejemplo perfecto: <b>48 meses</b> en barricas de roble blanco americano dan como resultado un excepcional tequila, enriquecido con el sabor propio de las maderas y ligeros toques de cacao.</p>
 				<ul>
 					<li>100% Agave Azul</li>
 					<li>Tiempo de maduración: <b>48 meses</b></li>
@@ -422,8 +422,8 @@
 			</div>
 			<div class="social">
 				<ul>
-					<li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.facebook.com/TequilaRazones" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="https://www.instagram.com/tequilarazones" target="_blank"><i class="fab fa-instagram"></i></a></li>
 				</ul>
 			</div>
 			<div class="tresmujeres">

@@ -6,10 +6,10 @@
 
 		<div id="age_form_container" class="center-align">
 			<div class="box">
-				<div>
+				<div style="display: inline-block; width: calc(100% - 90px);">
 					<img class="logo" src="{{ asset('img/razones_logo.png') }}" alt="Razones Tequila">
 				</div>
-				<form action="{{ route('home') }}" method="post">
+				<form action="{{ route('home') }}" method="post" style="display: inline-block; width: calc(100% - 0px);">
 					@csrf
 					<input type="hidden" name="dob" class="datepicker" placeholder="Ingresa tu fecha de nacimiento" value="Ene 1, 2000">
 

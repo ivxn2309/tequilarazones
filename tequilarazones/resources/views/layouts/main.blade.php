@@ -29,7 +29,7 @@
 	<link href="{{ asset('lib/fa/css/all.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('lib/materialize/css/materialize.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('lib/fullpage/dist/fullpage.min.css') }}" rel="stylesheet">
-	<link href="{{ asset('css/main.min.css?v=1.0.1') }}" rel="stylesheet">
+	<link href="{{ asset('css/main.min.css?v=1.1.1') }}" rel="stylesheet">
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="{{ asset('img/favicon.png?v=1.0') }}" type="image/png">
@@ -101,11 +101,11 @@
 					<div class="info">
 						<p>Tequila Razones 2019 © Todos los derechos reservados</p>
 						<ul id="menu">
-							<li><a href="#_home">Inicio</a></li>
-							<li><a href="#_about">¿Quiénes Somos?</a></li>
-							<li><a href="#_tequila_blanco">Tequila</a></li>
-							<li><a href="#_stores">¿Dónde Comprar?</a></li>
-							<li><a href="#_contact">Contacto</a></li>
+							<li><a href="/#_home">Inicio</a></li>
+							<li><a href="/#_about">¿Quiénes Somos?</a></li>
+							<li><a href="/#_tequila_blanco">Tequila</a></li>
+							<li><a href="/#_stores">¿Dónde Comprar?</a></li>
+							<li><a href="/#_contact">Contacto</a></li>
 						</ul>
 					</div>
 					<div class="tresmujeres">
@@ -115,8 +115,8 @@
 					</div>
 					<div class="social">
 						<ul>
-							<li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://www.facebook.com/TequilaRazones" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+							<li><a href="https://www.instagram.com/tequilarazones" target="_blank"><i class="fab fa-instagram"></i></a></li>
 						</ul>
 					</div>
 				</div>

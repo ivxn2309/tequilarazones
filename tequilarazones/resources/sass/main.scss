@@ -1482,7 +1482,10 @@ footer {
 /*  OVERRIDER  */
 /* ================================================================== */
 .fp-enabled body, html.fp-enabled {
-	overflow: auto !important;
+	@media(max-width: 992px) {
+		overflow: auto !important;
+	}
+	//
 }
 
 .modal {
@@ -1490,7 +1493,7 @@ footer {
 		top: auto !important;
 		bottom: 10%;
 		height: calc(100% - 160px);
-		height: 90%;
+		//height: 90%;
 	    max-height: 90%;
 	    margin-top: -35px;
 	    width: 90%;
